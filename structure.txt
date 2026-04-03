@@ -1,0 +1,735 @@
+.
+├── analysis_options.yaml
+├── android
+│   ├── app
+│   │   ├── build.gradle.kts
+│   │   └── src
+│   │       ├── debug
+│   │       │   └── AndroidManifest.xml
+│   │       ├── main
+│   │       │   ├── AndroidManifest.xml
+│   │       │   ├── java
+│   │       │   │   └── io
+│   │       │   │       └── flutter
+│   │       │   │           └── plugins
+│   │       │   │               └── GeneratedPluginRegistrant.java
+│   │       │   ├── kotlin
+│   │       │   │   └── com
+│   │       │   │       └── example
+│   │       │   │           └── pomodoro_cherish
+│   │       │   │               └── MainActivity.kt
+│   │       │   └── res
+│   │       │       ├── drawable
+│   │       │       │   └── launch_background.xml
+│   │       │       ├── drawable-v21
+│   │       │       │   └── launch_background.xml
+│   │       │       ├── mipmap-hdpi
+│   │       │       │   └── ic_launcher.png
+│   │       │       ├── mipmap-mdpi
+│   │       │       │   └── ic_launcher.png
+│   │       │       ├── mipmap-xhdpi
+│   │       │       │   └── ic_launcher.png
+│   │       │       ├── mipmap-xxhdpi
+│   │       │       │   └── ic_launcher.png
+│   │       │       ├── mipmap-xxxhdpi
+│   │       │       │   └── ic_launcher.png
+│   │       │       ├── values
+│   │       │       │   └── styles.xml
+│   │       │       └── values-night
+│   │       │           └── styles.xml
+│   │       └── profile
+│   │           └── AndroidManifest.xml
+│   ├── build.gradle.kts
+│   ├── gradle
+│   │   └── wrapper
+│   │       ├── gradle-wrapper.jar
+│   │       └── gradle-wrapper.properties
+│   ├── gradle.properties
+│   ├── gradlew
+│   ├── gradlew.bat
+│   ├── local.properties
+│   ├── pomodoro_cherish_android.iml
+│   └── settings.gradle.kts
+├── assets
+│   └── sounds
+│       └── complete.mp3
+├── build
+│   ├── flutter_assets
+│   │   ├── AssetManifest.bin
+│   │   ├── assets
+│   │   │   └── sounds
+│   │   │       └── complete.mp3
+│   │   ├── FontManifest.json
+│   │   ├── fonts
+│   │   │   └── MaterialIcons-Regular.otf
+│   │   ├── NativeAssetsManifest.json
+│   │   ├── NOTICES.Z
+│   │   ├── packages
+│   │   │   └── cupertino_icons
+│   │   │       └── assets
+│   │   │           └── CupertinoIcons.ttf
+│   │   └── shaders
+│   │       ├── ink_sparkle.frag
+│   │       └── stretch_effect.frag
+│   ├── native_assets
+│   │   └── windows
+│   └── windows
+│       ├── app.so
+│       └── x64
+│           ├── _deps
+│           │   ├── nuget-build
+│           │   ├── nuget-src
+│           │   │   └── nuget.exe
+│           │   └── nuget-subbuild
+│           │       ├── ALL_BUILD.dir
+│           │       │   └── Debug
+│           │       ├── ALL_BUILD.vcxproj
+│           │       ├── ALL_BUILD.vcxproj.filters
+│           │       ├── cmake_install.cmake
+│           │       ├── CMakeCache.txt
+│           │       ├── CMakeFiles
+│           │       │   ├── 4.2.3-msvc3
+│           │       │   │   ├── CMakeSystem.cmake
+│           │       │   │   ├── VCTargetsPath
+│           │       │   │   │   └── x64
+│           │       │   │   │       └── Debug
+│           │       │   │   │           ├── VCTargetsPath.recipe
+│           │       │   │   │           └── VCTargetsPath.tlog
+│           │       │   │   │               └── VCTargetsPath.lastbuildstate
+│           │       │   │   ├── VCTargetsPath.txt
+│           │       │   │   ├── VCTargetsPath.vcxproj
+│           │       │   │   └── x64
+│           │       │   │       └── Debug
+│           │       │   ├── 47a31e680c46d8e33f65de6ff31225b3
+│           │       │   │   ├── generate.stamp.rule
+│           │       │   │   └── nuget-populate.rule
+│           │       │   ├── 5518c75cc1d0ae32b3d58c9f7e6668f7
+│           │       │   │   ├── nuget-populate-build.rule
+│           │       │   │   ├── nuget-populate-configure.rule
+│           │       │   │   ├── nuget-populate-copyfile.rule
+│           │       │   │   ├── nuget-populate-download.rule
+│           │       │   │   ├── nuget-populate-install.rule
+│           │       │   │   ├── nuget-populate-mkdir.rule
+│           │       │   │   ├── nuget-populate-patch.rule
+│           │       │   │   ├── nuget-populate-test.rule
+│           │       │   │   └── nuget-populate-update.rule
+│           │       │   ├── b8000922c45759a6d91e3c6850358538
+│           │       │   │   └── nuget-populate-complete.rule
+│           │       │   ├── cmake.check_cache
+│           │       │   ├── CMakeConfigureLog.yaml
+│           │       │   ├── Debug
+│           │       │   │   └── nuget-populate-complete
+│           │       │   ├── generate.stamp
+│           │       │   ├── generate.stamp.depend
+│           │       │   ├── generate.stamp.list
+│           │       │   ├── InstallScripts.json
+│           │       │   ├── nuget-populate.dir
+│           │       │   │   ├── Labels.json
+│           │       │   │   └── Labels.txt
+│           │       │   ├── pkgRedirects
+│           │       │   └── TargetDirectories.txt
+│           │       ├── CMakeLists.txt
+│           │       ├── nuget-populate-prefix
+│           │       │   ├── src
+│           │       │   │   ├── nuget-populate-stamp
+│           │       │   │   │   ├── Debug
+│           │       │   │   │   │   ├── nuget-populate-build
+│           │       │   │   │   │   ├── nuget-populate-configure
+│           │       │   │   │   │   ├── nuget-populate-copyfile
+│           │       │   │   │   │   ├── nuget-populate-done
+│           │       │   │   │   │   ├── nuget-populate-download
+│           │       │   │   │   │   ├── nuget-populate-install
+│           │       │   │   │   │   ├── nuget-populate-mkdir
+│           │       │   │   │   │   ├── nuget-populate-patch
+│           │       │   │   │   │   ├── nuget-populate-test
+│           │       │   │   │   │   └── nuget-populate-update
+│           │       │   │   │   ├── download-nuget-populate.cmake
+│           │       │   │   │   ├── nuget-populate-patch-info.txt
+│           │       │   │   │   ├── nuget-populate-update-info.txt
+│           │       │   │   │   ├── nuget-populate-urlinfo.txt
+│           │       │   │   │   └── verify-nuget-populate.cmake
+│           │       │   │   └── nuget.exe
+│           │       │   └── tmp
+│           │       │       ├── nuget-populate-cfgcmd.txt
+│           │       │       └── nuget-populate-mkdirs.cmake
+│           │       ├── nuget-populate.dir
+│           │       │   └── Debug
+│           │       ├── nuget-populate.slnx
+│           │       ├── nuget-populate.vcxproj
+│           │       ├── nuget-populate.vcxproj.filters
+│           │       ├── x64
+│           │       │   └── Debug
+│           │       │       ├── ALL_BUILD
+│           │       │       │   ├── ALL_BUILD.recipe
+│           │       │       │   └── ALL_BUILD.tlog
+│           │       │       │       ├── ALL_BUILD.lastbuildstate
+│           │       │       │       ├── CustomBuild.command.1.tlog
+│           │       │       │       ├── CustomBuild.read.1.tlog
+│           │       │       │       └── CustomBuild.write.1.tlog
+│           │       │       ├── nuget-populate
+│           │       │       │   ├── nuget-populate.recipe
+│           │       │       │   └── nuget-populate.tlog
+│           │       │       │       ├── CustomBuild.command.1.tlog
+│           │       │       │       ├── CustomBuild.read.1.tlog
+│           │       │       │       ├── CustomBuild.write.1.tlog
+│           │       │       │       └── nuget-populate.lastbuildstate
+│           │       │       └── ZERO_CHECK
+│           │       │           ├── ZERO_CHECK.recipe
+│           │       │           └── ZERO_CHECK.tlog
+│           │       │               ├── CustomBuild.command.1.tlog
+│           │       │               ├── CustomBuild.read.1.tlog
+│           │       │               ├── CustomBuild.write.1.tlog
+│           │       │               └── ZERO_CHECK.lastbuildstate
+│           │       ├── ZERO_CHECK.dir
+│           │       │   └── Debug
+│           │       ├── ZERO_CHECK.vcxproj
+│           │       └── ZERO_CHECK.vcxproj.filters
+│           ├── ALL_BUILD.dir
+│           │   ├── Debug
+│           │   ├── Profile
+│           │   └── Release
+│           ├── ALL_BUILD.vcxproj
+│           ├── ALL_BUILD.vcxproj.filters
+│           ├── cmake_install.cmake
+│           ├── CMakeCache.txt
+│           ├── CMakeFiles
+│           │   ├── 348445e6826b9665b9ffad9fcec28030
+│           │   │   └── INSTALL_force.rule
+│           │   ├── 4.2.3-msvc3
+│           │   │   ├── CMakeCXXCompiler.cmake
+│           │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│           │   │   ├── CMakeRCCompiler.cmake
+│           │   │   ├── CMakeSystem.cmake
+│           │   │   ├── CompilerIdCXX
+│           │   │   │   ├── CMakeCXXCompilerId.cpp
+│           │   │   │   ├── CompilerIdCXX.exe
+│           │   │   │   ├── CompilerIdCXX.vcxproj
+│           │   │   │   ├── Debug
+│           │   │   │   │   ├── CMakeCXXCompilerId.obj
+│           │   │   │   │   ├── CompilerIdCXX.exe.recipe
+│           │   │   │   │   └── CompilerIdCXX.tlog
+│           │   │   │   │       ├── CL.command.1.tlog
+│           │   │   │   │       ├── Cl.items.tlog
+│           │   │   │   │       ├── CL.read.1.tlog
+│           │   │   │   │       ├── CL.write.1.tlog
+│           │   │   │   │       ├── CompilerIdCXX.lastbuildstate
+│           │   │   │   │       ├── link.command.1.tlog
+│           │   │   │   │       ├── link.read.1.tlog
+│           │   │   │   │       ├── link.secondary.1.tlog
+│           │   │   │   │       └── link.write.1.tlog
+│           │   │   │   └── tmp
+│           │   │   ├── VCTargetsPath
+│           │   │   │   └── x64
+│           │   │   │       └── Debug
+│           │   │   │           ├── VCTargetsPath.recipe
+│           │   │   │           └── VCTargetsPath.tlog
+│           │   │   │               └── VCTargetsPath.lastbuildstate
+│           │   │   ├── VCTargetsPath.txt
+│           │   │   ├── VCTargetsPath.vcxproj
+│           │   │   └── x64
+│           │   │       └── Debug
+│           │   ├── 48fa55b0c4b806db01434b0047412e67
+│           │   │   ├── flutter_assemble.rule
+│           │   │   └── INSTALL_force.rule
+│           │   ├── 8bdc4ff70a6d1b15ba277f1e30694dbf
+│           │   │   ├── generate.stamp.rule
+│           │   │   └── INSTALL_force.rule
+│           │   ├── 9b0bbf43e15c05070341201710f09ca1
+│           │   │   └── INSTALL_force.rule
+│           │   ├── cmake.check_cache
+│           │   ├── CMakeConfigureLog.yaml
+│           │   ├── dc2ce3f7642e576f7ff1d3b3e9f8415b
+│           │   │   └── flutter_windows.dll.rule
+│           │   ├── generate.stamp
+│           │   ├── generate.stamp.depend
+│           │   ├── generate.stamp.list
+│           │   ├── InstallScripts.json
+│           │   ├── pkgRedirects
+│           │   └── TargetDirectories.txt
+│           ├── flutter
+│           │   ├── cmake_install.cmake
+│           │   ├── CMakeFiles
+│           │   │   ├── generate.stamp
+│           │   │   └── generate.stamp.depend
+│           │   ├── flutter_assemble.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   ├── flutter_assemble.vcxproj
+│           │   ├── flutter_assemble.vcxproj.filters
+│           │   ├── flutter_wrapper_app.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   │       ├── core_implementations.obj
+│           │   │       ├── flutter_.1C0B5C5E.tlog
+│           │   │       │   ├── CL.command.1.tlog
+│           │   │       │   ├── Cl.items.tlog
+│           │   │       │   ├── CL.read.1.tlog
+│           │   │       │   ├── CL.write.1.tlog
+│           │   │       │   ├── CustomBuild.command.1.tlog
+│           │   │       │   ├── CustomBuild.read.1.tlog
+│           │   │       │   ├── CustomBuild.write.1.tlog
+│           │   │       │   ├── flutter_wrapper_app.lastbuildstate
+│           │   │       │   ├── Lib-link.read.1.tlog
+│           │   │       │   ├── Lib-link.write.1.tlog
+│           │   │       │   └── Lib.command.1.tlog
+│           │   │       ├── flutter_engine.obj
+│           │   │       ├── flutter_view_controller.obj
+│           │   │       ├── flutter_wrapper_app.lib.recipe
+│           │   │       └── standard_codec.obj
+│           │   ├── flutter_wrapper_app.vcxproj
+│           │   ├── flutter_wrapper_app.vcxproj.filters
+│           │   ├── flutter_wrapper_plugin.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   │       ├── core_implementations.obj
+│           │   │       ├── flutter_.2D0E5B19.tlog
+│           │   │       │   ├── CL.command.1.tlog
+│           │   │       │   ├── Cl.items.tlog
+│           │   │       │   ├── CL.read.1.tlog
+│           │   │       │   ├── CL.write.1.tlog
+│           │   │       │   ├── CustomBuild.command.1.tlog
+│           │   │       │   ├── CustomBuild.read.1.tlog
+│           │   │       │   ├── CustomBuild.write.1.tlog
+│           │   │       │   ├── flutter_wrapper_plugin.lastbuildstate
+│           │   │       │   ├── Lib-link.read.1.tlog
+│           │   │       │   ├── Lib-link.write.1.tlog
+│           │   │       │   └── Lib.command.1.tlog
+│           │   │       ├── flutter_wrapper_plugin.lib.recipe
+│           │   │       ├── plugin_registrar.obj
+│           │   │       └── standard_codec.obj
+│           │   ├── flutter_wrapper_plugin.vcxproj
+│           │   ├── flutter_wrapper_plugin.vcxproj.filters
+│           │   ├── INSTALL.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   ├── INSTALL.vcxproj
+│           │   ├── INSTALL.vcxproj.filters
+│           │   ├── Release
+│           │   │   ├── flutter_wrapper_app.lib
+│           │   │   └── flutter_wrapper_plugin.lib
+│           │   └── x64
+│           │       └── Release
+│           │           └── flutter_assemble
+│           │               ├── flutter_assemble.recipe
+│           │               └── flutter_assemble.tlog
+│           │                   ├── CustomBuild.command.1.tlog
+│           │                   ├── CustomBuild.read.1.tlog
+│           │                   ├── CustomBuild.write.1.tlog
+│           │                   └── flutter_assemble.lastbuildstate
+│           ├── install_manifest.txt
+│           ├── INSTALL.dir
+│           │   ├── Debug
+│           │   ├── Profile
+│           │   └── Release
+│           ├── INSTALL.vcxproj
+│           ├── INSTALL.vcxproj.filters
+│           ├── packages
+│           │   └── Microsoft.Windows.ImplementationLibrary
+│           │       ├── build
+│           │       │   └── native
+│           │       │       └── Microsoft.Windows.ImplementationLibrary.targets
+│           │       ├── include
+│           │       │   └── wil
+│           │       │       ├── com.h
+│           │       │       ├── common.h
+│           │       │       ├── cppwinrt_wrl.h
+│           │       │       ├── cppwinrt.h
+│           │       │       ├── filesystem.h
+│           │       │       ├── nt_result_macros.h
+│           │       │       ├── registry.h
+│           │       │       ├── resource.h
+│           │       │       ├── result_macros.h
+│           │       │       ├── result_originate.h
+│           │       │       ├── result.h
+│           │       │       ├── rpc_helpers.h
+│           │       │       ├── safecast.h
+│           │       │       ├── stl.h
+│           │       │       ├── token_helpers.h
+│           │       │       ├── Tracelogging.h
+│           │       │       ├── traceloggingconfig.h
+│           │       │       ├── win32_helpers.h
+│           │       │       ├── winrt.h
+│           │       │       ├── wistd_config.h
+│           │       │       ├── wistd_functional.h
+│           │       │       ├── wistd_memory.h
+│           │       │       ├── wistd_type_traits.h
+│           │       │       └── wrl.h
+│           │       ├── LICENSE
+│           │       ├── Microsoft.Windows.ImplementationLibrary.nupkg
+│           │       └── ThirdPartyNotices.txt
+│           ├── plugins
+│           │   └── audioplayers_windows
+│           │       ├── ALL_BUILD.dir
+│           │       │   ├── Debug
+│           │       │   ├── Profile
+│           │       │   └── Release
+│           │       ├── ALL_BUILD.vcxproj
+│           │       ├── ALL_BUILD.vcxproj.filters
+│           │       ├── audioplayers_windows_plugin.dir
+│           │       │   ├── Debug
+│           │       │   ├── Profile
+│           │       │   └── Release
+│           │       │       ├── audio_player.obj
+│           │       │       ├── audiopla.0EF652DB.tlog
+│           │       │       │   ├── audioplayers_windows_plugin.lastbuildstate
+│           │       │       │   ├── CL.command.1.tlog
+│           │       │       │   ├── Cl.items.tlog
+│           │       │       │   ├── CL.read.1.tlog
+│           │       │       │   ├── CL.write.1.tlog
+│           │       │       │   ├── CustomBuild.command.1.tlog
+│           │       │       │   ├── CustomBuild.read.1.tlog
+│           │       │       │   ├── CustomBuild.write.1.tlog
+│           │       │       │   ├── link.command.1.tlog
+│           │       │       │   ├── link.read.1.tlog
+│           │       │       │   ├── link.secondary.1.tlog
+│           │       │       │   └── link.write.1.tlog
+│           │       │       ├── audioplayers_windows_plugin.dll.recipe
+│           │       │       ├── audioplayers_windows_plugin.obj
+│           │       │       ├── MediaEngineExtension.obj
+│           │       │       └── MediaEngineWrapper.obj
+│           │       ├── audioplayers_windows_plugin.vcxproj
+│           │       ├── audioplayers_windows_plugin.vcxproj.filters
+│           │       ├── audioplayers_windows.slnx
+│           │       ├── cmake_install.cmake
+│           │       ├── CMakeFiles
+│           │       │   ├── generate.stamp
+│           │       │   └── generate.stamp.depend
+│           │       ├── INSTALL.dir
+│           │       │   ├── Debug
+│           │       │   ├── Profile
+│           │       │   └── Release
+│           │       ├── INSTALL.vcxproj
+│           │       ├── INSTALL.vcxproj.filters
+│           │       └── Release
+│           │           ├── audioplayers_windows_plugin.dll
+│           │           ├── audioplayers_windows_plugin.exp
+│           │           └── audioplayers_windows_plugin.lib
+│           ├── pomodoro_cherish.slnx
+│           ├── runner
+│           │   ├── ALL_BUILD.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   ├── ALL_BUILD.vcxproj
+│           │   ├── ALL_BUILD.vcxproj.filters
+│           │   ├── cmake_install.cmake
+│           │   ├── CMakeFiles
+│           │   │   ├── generate.stamp
+│           │   │   └── generate.stamp.depend
+│           │   ├── INSTALL.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   ├── INSTALL.vcxproj
+│           │   ├── INSTALL.vcxproj.filters
+│           │   ├── pomodoro_cherish.dir
+│           │   │   ├── Debug
+│           │   │   ├── Profile
+│           │   │   └── Release
+│           │   │       ├── flutter_window.obj
+│           │   │       ├── generated_plugin_registrant.obj
+│           │   │       ├── main.obj
+│           │   │       ├── pomodoro_cherish.exe.recipe
+│           │   │       ├── pomodoro_cherish.tlog
+│           │   │       │   ├── CL.command.1.tlog
+│           │   │       │   ├── Cl.items.tlog
+│           │   │       │   ├── CL.read.1.tlog
+│           │   │       │   ├── CL.write.1.tlog
+│           │   │       │   ├── CustomBuild.command.1.tlog
+│           │   │       │   ├── CustomBuild.read.1.tlog
+│           │   │       │   ├── CustomBuild.write.1.tlog
+│           │   │       │   ├── link.command.1.tlog
+│           │   │       │   ├── link.read.1.tlog
+│           │   │       │   ├── link.secondary.1.tlog
+│           │   │       │   ├── link.write.1.tlog
+│           │   │       │   ├── pomodoro_cherish.lastbuildstate
+│           │   │       │   ├── rc.command.1.tlog
+│           │   │       │   ├── rc.read.1.tlog
+│           │   │       │   └── rc.write.1.tlog
+│           │   │       ├── Runner.res
+│           │   │       ├── utils.obj
+│           │   │       └── win32_window.obj
+│           │   ├── pomodoro_cherish.vcxproj
+│           │   ├── pomodoro_cherish.vcxproj.filters
+│           │   ├── Release
+│           │   │   ├── audioplayers_windows_plugin.dll
+│           │   │   ├── data
+│           │   │   │   ├── app.so
+│           │   │   │   ├── flutter_assets
+│           │   │   │   │   ├── AssetManifest.bin
+│           │   │   │   │   ├── assets
+│           │   │   │   │   │   └── sounds
+│           │   │   │   │   │       └── complete.mp3
+│           │   │   │   │   ├── FontManifest.json
+│           │   │   │   │   ├── fonts
+│           │   │   │   │   │   └── MaterialIcons-Regular.otf
+│           │   │   │   │   ├── NativeAssetsManifest.json
+│           │   │   │   │   ├── NOTICES.Z
+│           │   │   │   │   ├── packages
+│           │   │   │   │   │   └── cupertino_icons
+│           │   │   │   │   │       └── assets
+│           │   │   │   │   │           └── CupertinoIcons.ttf
+│           │   │   │   │   └── shaders
+│           │   │   │   │       ├── ink_sparkle.frag
+│           │   │   │   │       └── stretch_effect.frag
+│           │   │   │   └── icudtl.dat
+│           │   │   ├── flutter_windows.dll
+│           │   │   ├── pomodoro_cherish.exe
+│           │   │   └── pomodoro_cherish.msix
+│           │   └── runner.slnx
+│           ├── x64
+│           │   └── Release
+│           │       ├── ALL_BUILD
+│           │       │   ├── ALL_BUILD.recipe
+│           │       │   └── ALL_BUILD.tlog
+│           │       │       ├── ALL_BUILD.lastbuildstate
+│           │       │       ├── CustomBuild.command.1.tlog
+│           │       │       ├── CustomBuild.read.1.tlog
+│           │       │       └── CustomBuild.write.1.tlog
+│           │       ├── INSTALL
+│           │       │   ├── INSTALL.recipe
+│           │       │   └── INSTALL.tlog
+│           │       │       ├── CustomBuild.command.1.tlog
+│           │       │       ├── CustomBuild.read.1.tlog
+│           │       │       ├── CustomBuild.write.1.tlog
+│           │       │       └── INSTALL.lastbuildstate
+│           │       └── ZERO_CHECK
+│           │           ├── ZERO_CHECK.recipe
+│           │           └── ZERO_CHECK.tlog
+│           │               ├── CustomBuild.command.1.tlog
+│           │               ├── CustomBuild.read.1.tlog
+│           │               ├── CustomBuild.write.1.tlog
+│           │               └── ZERO_CHECK.lastbuildstate
+│           ├── ZERO_CHECK.dir
+│           │   ├── Debug
+│           │   ├── Profile
+│           │   └── Release
+│           ├── ZERO_CHECK.vcxproj
+│           └── ZERO_CHECK.vcxproj.filters
+├── ios
+│   ├── Flutter
+│   │   ├── AppFrameworkInfo.plist
+│   │   ├── Debug.xcconfig
+│   │   ├── ephemeral
+│   │   │   ├── flutter_lldb_helper.py
+│   │   │   └── flutter_lldbinit
+│   │   ├── flutter_export_environment.sh
+│   │   ├── Generated.xcconfig
+│   │   └── Release.xcconfig
+│   ├── Runner
+│   │   ├── AppDelegate.swift
+│   │   ├── Assets.xcassets
+│   │   │   ├── AppIcon.appiconset
+│   │   │   │   ├── Contents.json
+│   │   │   │   ├── Icon-App-1024x1024@1x.png
+│   │   │   │   ├── Icon-App-20x20@1x.png
+│   │   │   │   ├── Icon-App-20x20@2x.png
+│   │   │   │   ├── Icon-App-20x20@3x.png
+│   │   │   │   ├── Icon-App-29x29@1x.png
+│   │   │   │   ├── Icon-App-29x29@2x.png
+│   │   │   │   ├── Icon-App-29x29@3x.png
+│   │   │   │   ├── Icon-App-40x40@1x.png
+│   │   │   │   ├── Icon-App-40x40@2x.png
+│   │   │   │   ├── Icon-App-40x40@3x.png
+│   │   │   │   ├── Icon-App-60x60@2x.png
+│   │   │   │   ├── Icon-App-60x60@3x.png
+│   │   │   │   ├── Icon-App-76x76@1x.png
+│   │   │   │   ├── Icon-App-76x76@2x.png
+│   │   │   │   └── Icon-App-83.5x83.5@2x.png
+│   │   │   └── LaunchImage.imageset
+│   │   │       ├── Contents.json
+│   │   │       ├── LaunchImage.png
+│   │   │       ├── LaunchImage@2x.png
+│   │   │       ├── LaunchImage@3x.png
+│   │   │       └── README.md
+│   │   ├── Base.lproj
+│   │   │   ├── LaunchScreen.storyboard
+│   │   │   └── Main.storyboard
+│   │   ├── GeneratedPluginRegistrant.h
+│   │   ├── GeneratedPluginRegistrant.m
+│   │   ├── Info.plist
+│   │   ├── Runner-Bridging-Header.h
+│   │   └── SceneDelegate.swift
+│   ├── Runner.xcodeproj
+│   │   ├── project.pbxproj
+│   │   ├── project.xcworkspace
+│   │   │   ├── contents.xcworkspacedata
+│   │   │   └── xcshareddata
+│   │   │       ├── IDEWorkspaceChecks.plist
+│   │   │       └── WorkspaceSettings.xcsettings
+│   │   └── xcshareddata
+│   │       └── xcschemes
+│   │           └── Runner.xcscheme
+│   ├── Runner.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   └── xcshareddata
+│   │       ├── IDEWorkspaceChecks.plist
+│   │       └── WorkspaceSettings.xcsettings
+│   └── RunnerTests
+│       └── RunnerTests.swift
+├── lib
+│   ├── app_theme.dart
+│   ├── main.dart
+│   ├── providers
+│   │   ├── theme_provider.dart
+│   │   ├── timer_provider.dart
+│   │   └── title_provider.dart
+│   ├── screens
+│   │   ├── settings_screen.dart
+│   │   └── timer_screen.dart
+│   └── widgets
+│       ├── color_picker.dart
+│       ├── preset_selector.dart
+│       └── timer_ring.dart
+├── linux
+│   ├── CMakeLists.txt
+│   ├── flutter
+│   │   ├── CMakeLists.txt
+│   │   ├── ephemeral
+│   │   ├── generated_plugin_registrant.cc
+│   │   ├── generated_plugin_registrant.h
+│   │   └── generated_plugins.cmake
+│   └── runner
+│       ├── CMakeLists.txt
+│       ├── main.cc
+│       ├── my_application.cc
+│       └── my_application.h
+├── macos
+│   ├── Flutter
+│   │   ├── ephemeral
+│   │   │   ├── flutter_export_environment.sh
+│   │   │   └── Flutter-Generated.xcconfig
+│   │   ├── Flutter-Debug.xcconfig
+│   │   ├── Flutter-Release.xcconfig
+│   │   └── GeneratedPluginRegistrant.swift
+│   ├── Runner
+│   │   ├── AppDelegate.swift
+│   │   ├── Assets.xcassets
+│   │   │   └── AppIcon.appiconset
+│   │   │       ├── app_icon_1024.png
+│   │   │       ├── app_icon_128.png
+│   │   │       ├── app_icon_16.png
+│   │   │       ├── app_icon_256.png
+│   │   │       ├── app_icon_32.png
+│   │   │       ├── app_icon_512.png
+│   │   │       ├── app_icon_64.png
+│   │   │       └── Contents.json
+│   │   ├── Base.lproj
+│   │   │   └── MainMenu.xib
+│   │   ├── Configs
+│   │   │   ├── AppInfo.xcconfig
+│   │   │   ├── Debug.xcconfig
+│   │   │   ├── Release.xcconfig
+│   │   │   └── Warnings.xcconfig
+│   │   ├── DebugProfile.entitlements
+│   │   ├── Info.plist
+│   │   ├── MainFlutterWindow.swift
+│   │   └── Release.entitlements
+│   ├── Runner.xcodeproj
+│   │   ├── project.pbxproj
+│   │   ├── project.xcworkspace
+│   │   │   └── xcshareddata
+│   │   │       └── IDEWorkspaceChecks.plist
+│   │   └── xcshareddata
+│   │       └── xcschemes
+│   │           └── Runner.xcscheme
+│   ├── Runner.xcworkspace
+│   │   ├── contents.xcworkspacedata
+│   │   └── xcshareddata
+│   │       └── IDEWorkspaceChecks.plist
+│   └── RunnerTests
+│       └── RunnerTests.swift
+├── pomodoro_cherish.iml
+├── pubspec.lock
+├── pubspec.yaml
+├── README.md
+├── structure.txt
+├── test
+│   └── widget_test.dart
+├── web
+│   ├── favicon.png
+│   ├── icons
+│   │   ├── Icon-192.png
+│   │   ├── Icon-512.png
+│   │   ├── Icon-maskable-192.png
+│   │   └── Icon-maskable-512.png
+│   ├── index.html
+│   └── manifest.json
+└── windows
+    ├── CMakeLists.txt
+    ├── flutter
+    │   ├── CMakeLists.txt
+    │   ├── ephemeral
+    │   │   ├── cpp_client_wrapper
+    │   │   │   ├── binary_messenger_impl.h
+    │   │   │   ├── byte_buffer_streams.h
+    │   │   │   ├── core_implementations.cc
+    │   │   │   ├── engine_method_result.cc
+    │   │   │   ├── flutter_engine.cc
+    │   │   │   ├── flutter_view_controller.cc
+    │   │   │   ├── include
+    │   │   │   │   └── flutter
+    │   │   │   │       ├── basic_message_channel.h
+    │   │   │   │       ├── binary_messenger.h
+    │   │   │   │       ├── byte_streams.h
+    │   │   │   │       ├── dart_project.h
+    │   │   │   │       ├── encodable_value.h
+    │   │   │   │       ├── engine_method_result.h
+    │   │   │   │       ├── event_channel.h
+    │   │   │   │       ├── event_sink.h
+    │   │   │   │       ├── event_stream_handler_functions.h
+    │   │   │   │       ├── event_stream_handler.h
+    │   │   │   │       ├── flutter_engine.h
+    │   │   │   │       ├── flutter_view_controller.h
+    │   │   │   │       ├── flutter_view.h
+    │   │   │   │       ├── message_codec.h
+    │   │   │   │       ├── method_call.h
+    │   │   │   │       ├── method_channel.h
+    │   │   │   │       ├── method_codec.h
+    │   │   │   │       ├── method_result_functions.h
+    │   │   │   │       ├── method_result.h
+    │   │   │   │       ├── plugin_registrar_windows.h
+    │   │   │   │       ├── plugin_registrar.h
+    │   │   │   │       ├── plugin_registry.h
+    │   │   │   │       ├── standard_codec_serializer.h
+    │   │   │   │       ├── standard_message_codec.h
+    │   │   │   │       ├── standard_method_codec.h
+    │   │   │   │       └── texture_registrar.h
+    │   │   │   ├── plugin_registrar.cc
+    │   │   │   ├── readme
+    │   │   │   ├── standard_codec.cc
+    │   │   │   └── texture_registrar_impl.h
+    │   │   ├── flutter_export.h
+    │   │   ├── flutter_messenger.h
+    │   │   ├── flutter_plugin_registrar.h
+    │   │   ├── flutter_texture_registrar.h
+    │   │   ├── flutter_windows.dll
+    │   │   ├── flutter_windows.dll.exp
+    │   │   ├── flutter_windows.dll.lib
+    │   │   ├── flutter_windows.dll.pdb
+    │   │   ├── flutter_windows.h
+    │   │   ├── generated_config.cmake
+    │   │   └── icudtl.dat
+    │   ├── generated_plugin_registrant.cc
+    │   ├── generated_plugin_registrant.h
+    │   └── generated_plugins.cmake
+    └── runner
+        ├── CMakeLists.txt
+        ├── flutter_window.cpp
+        ├── flutter_window.h
+        ├── main.cpp
+        ├── resource.h
+        ├── resources
+        │   └── app_icon.ico
+        ├── runner.exe.manifest
+        ├── Runner.rc
+        ├── utils.cpp
+        ├── utils.h
+        ├── win32_window.cpp
+        └── win32_window.h
+
+241 directories, 492 files
