@@ -1,13 +1,14 @@
 # 🍅 Pomodoro Cherish
 
 A minimalist Pomodoro timer built with Flutter, designed for focus and customization.  
-Windows · macOS · iPad · Android — single codebase.
+Windows · macOS · iPad — single codebase.
 
 ---
 
 ## Screenshots
 
-> _Add your screenshots here_
+![메인 화면](screenshots/main_dark.png)
+![설정 화면](screenshots/settings.png)
 
 ---
 
